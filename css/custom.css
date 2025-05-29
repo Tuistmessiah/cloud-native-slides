@@ -44,3 +44,33 @@ h2 {
         opacity: 1;
     }
 }
+
+.fixed-strip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #d71920; /* Adjust to match your branding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0rem;
+    z-index: 9999;
+    color: white;
+    font-family: sans-serif;
+}
+
+.fixed-strip img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.fixed-strip p {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    font-size: 1.75rem;
+}

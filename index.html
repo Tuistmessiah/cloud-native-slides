@@ -4,39 +4,42 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval';" />
-        <title>Kafka Streaming Workshop</title>
+        <title>Cloud Native Workshop</title>
         <link rel="stylesheet" href="dist/reset.css" />
         <link rel="stylesheet" href="dist/reveal.css" />
         <link rel="stylesheet" href="dist/theme/black.css" />
         <link rel="stylesheet" href="css/custom.css" />
         <link rel="icon" href="data:," />
-        <!-- Change theme if needed -->
     </head>
     <body>
+        <div class="fixed-strip">
+            <img src="images/logo.png" alt="Logo" />
+            <p>Cloud Native</p>
+        </div>
         <div class="reveal">
             <div class="slides">
                 <section id="begin">Start ➡️</section>
 
-                <!-- Slide 1: Title Slide -->
+                <!-- Number 2: Welcome Slide -->
+                <section id="welcome"></section>
+
+                <!-- Number 3: Introduction Slides -->
                 <section id="introduction"></section>
 
-                <!-- Slide 2: Introduction (Main Topic) -->
-                <section id="what-is-kafka"></section>
+                <!-- Number 4 -->
+                <section id="1"></section>
 
-                <!-- Slide 3: Kafka Theory (Main Topic) -->
-                <section id="kafka-concepts"></section>
+                <!-- Number 5 -->
+                <section id="2"></section>
 
-                <!-- Slide 4: Exercise -->
-                <section id="design"></section>
+                <!-- Number 6 -->
+                <section id="3"></section>
 
-                <!-- Slide 5: Interactive Demo 1 -->
-                <section id="demo-CLI"></section>
+                <!-- Number 7 -->
+                <section id="4"></section>
 
-                <!-- Slide 6: Interactive Demo 2 -->
-                <section id="demo-apps"></section>
-
-                <!-- Slide 7: Quiz + Wrap-up -->
-                <section id="quiz-wrap-up"></section>
+                <!-- Number N -->
+                <section id="end"></section>
             </div>
         </div>
 
@@ -62,13 +65,19 @@
                         .catch((error) => console.error('Error loading Kafka Concepts:', error));
                 }
 
+                fetcher('welcome');
                 fetcher('introduction');
-                fetcher('what-is-kafka');
-                fetcher('kafka-concepts');
-                fetcher('design');
-                fetcher('demo-CLI');
-                fetcher('demo-apps');
-                fetcher('quiz-wrap-up');
+                fetcher('1');
+                fetcher('2');
+                fetcher('3');
+                fetcher('4');
+                // fetcher('5');
+                // fetcher('6');
+                // fetcher('7');
+                // fetcher('8');
+                // fetcher('9');
+                // fetcher('10');
+                fetcher('end');
             }
 
             window.onload = loadKafkaConcepts;

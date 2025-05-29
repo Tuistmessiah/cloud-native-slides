@@ -1,0 +1,107 @@
+<!-- Module 4: Docker Basics for Beginners -->
+
+<!-- Slide 1: What is Docker? -->
+<section>
+    <h2>🐳 What is Docker?</h2>
+    <p>Docker lets you package apps and their dependencies into containers that run anywhere.</p>
+    <p class="down">⬇️ What is Docker?</p>
+    <p class="right">➡️ Next: Wrap-up</p>
+</section>
+
+<section>
+    <h2>🐳 What is Docker?</h2>
+    <p>Contrary to a virtual machine, a container does not have its own operating system. It shares the host's OS.</p>
+    <img src="images/docker-system.png" alt="Docker vs VM" width="80%" />
+    <p class="down">⬇️ Why Use Containers?</p>
+</section>
+
+<!-- Slide 2: Why Use Containers? -->
+<section>
+    <h2>🔹 Why Use Containers?</h2>
+    <ul>
+        <li>📦 Portable across machines and environments</li>
+        <li>⚡ Fast startup time and small footprint</li>
+        <li>🔁 Reproducible builds and behavior</li>
+        <li>🚫 Avoids "works on my machine" problems</li>
+    </ul>
+    <p class="down">⬇️ Docker Image vs Container</p>
+</section>
+
+<!-- Slide 3: Image vs Container -->
+<section>
+    <h2>🧊 Image vs 🟢 Container</h2>
+    <ul>
+        <li><b>Image</b>: A snapshot of your app and dependencies</li>
+        <li><b>Container</b>: A running instance of an image</li>
+        <li>You can run many containers from the same image</li>
+    </ul>
+    <img src="images/docker-file-image-container.png" alt="Image vs Container" width="70%" />
+    <p class="down">⬇️ Setup Docker</p>
+</section>
+
+<section>
+    <h2>🧊 Image vs 🟢 Container</h2>
+    <ul>
+        <li><b>Image</b>: A snapshot of your app and dependencies</li>
+        <li><b>Container</b>: A running instance of an image</li>
+        <li>You can run many containers from the same image</li>
+    </ul>
+    <img src="images/docker-file-image-container.png" alt="Image vs Container" width="70%" />
+    <p class="down">⬇️ Setup Docker</p>
+</section>
+
+<section>
+    <h2>Setup Docker</h2>
+    <p>Multiple options:</p>
+    <ul>
+        <li>Install Docker Desktop (Windows, Mac, Linux)</li>
+        <li>Use a cloud provider (AWS, Azure, GCP)</li>
+        <li>Use a container service (ECS, EKS, AKS)</li>
+        <li>Use an online playground (Play with Docker, Gitpod, etc.)</li>
+    </ul>
+    <p><a href="https://docs.docker.com/engine/install/">Install Docker Desktop</a></p>
+    <p class="down">⬇️ Setup Docker</p>
+</section>
+
+<section>
+    <h2>Setup Docker</h2>
+    <p>For this workshop, we can use the online playground:</p>
+    <p><a href="https://labs.play-with-docker.com/" target="_blank">Play with Docker</a></p>
+    <p class="down">⬇️ Hands-On: Hello from Docker</p>
+</section>
+
+<!-- Slide 4: Hands-On with Alpine -->
+<section>
+    <h2>🔧 Hands-On: Hello from Docker</h2>
+    <p>Setup docker in your machine</p>
+    <pre><code>docker pull alpine
+docker run -it alpine
+# Try inside the container:
+echo hello docker
+exit</code></pre>
+    <p>This spins up a tiny Linux container interactively.</p>
+    <p class="down">⬇️ See What You Did</p>
+</section>
+
+<!-- Slide 5: Inspecting Containers -->
+<section>
+    <h2>🔍 Inspect What You Did</h2>
+    <ul>
+        <li>📜 <code>docker ps -a</code> – See all containers (even stopped ones)</li>
+        <li>🧼 <code>docker rm &lt;id&gt;</code> – Remove a container</li>
+        <li>🧯 <code>docker rmi &lt;image&gt;</code> – Remove the image</li>
+    </ul>
+    <p class="down">⬇️ Summary</p>
+</section>
+
+<!-- Slide 6: Recap & Next Steps -->
+<section>
+    <h2>✅ Summary</h2>
+    <ul>
+        <li>Docker packages your app into a self-contained unit</li>
+        <li>Images are blueprints, containers are the running result</li>
+        <li>Try other base images: ubuntu, node, nginx, etc.</li>
+        <li>Practice with <a href="https://labs.play-with-docker.com/" target="_blank">Play with Docker</a></li>
+    </ul>
+    <p class="right">➡️ Next: Wrap-up</p>
+</section>

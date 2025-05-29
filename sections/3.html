@@ -1,0 +1,124 @@
+<!-- Module 3: Containers, Docker & Orchestration -->
+
+<!-- Slide 0: Containers (Visual Intro) -->
+<section>
+    <h2>🔹 What are Containers?</h2>
+    <p class="down">⬇️ Concept Overview</p>
+    <p class="right">➡️ Next: Docker Hands-On</p>
+</section>
+
+<!-- Slide 0: Containers (Visual Intro) -->
+<section>
+    <h2>🔹 What are Containers?</h2>
+    <img src="images/containers.png" alt="Containers Visual" width="80%" />
+    <p class="down">⬇️ Concept Overview</p>
+</section>
+
+<!-- Slide 1: Containers Overview -->
+<section>
+    <h2>🔹 What are Containers?</h2>
+    <ul>
+        <li>📦 Containers package code, libraries, and dependencies</li>
+        <li>⚡ Lightweight and fast to start—ideal for microservices</li>
+        <li>🧩 Improve portability and dev/prod consistency</li>
+    </ul>
+    <p class="down">⬇️ Build it, Ship it, Run it (Visual)</p>
+</section>
+
+<!-- Slide 2: Build it, Ship it, Run it (Visual) -->
+<section>
+    <h2>🔹 Build it, Ship it, Run it</h2>
+    <img src="images/docker-flow.png" alt="Build Ship Run Visual" width="80%" />
+    <p class="down">⬇️ Build it, Ship it, Run it</p>
+</section>
+
+<!-- Slide 3: Build it, Ship it, Run it -->
+<section>
+    <h2>🔹 Build it, Ship it, Run it</h2>
+    <ul>
+        <li>🏗️ Build: create images with Docker</li>
+        <li>🚢 Ship: push to a container registry</li>
+        <li>🚀 Run: deploy on orchestrators like Kubernetes</li>
+    </ul>
+    <p class="down">⬇️ Dockerfile Visual</p>
+</section>
+
+<!-- Slide 4: Dockerfile (Visual) -->
+<section>
+    <h2>🔹 Dockerfile Example</h2>
+    <img src="images/dockerfile.png" alt="Dockerfile Visual" width="80%" />
+    <p class="down">⬇️ Dockerfile Code</p>
+</section>
+
+<!-- Slide 5: Dockerfile Breakdown -->
+<section>
+    <h2>🔹 Dockerfile Example</h2>
+    <pre><code>FROM python:3-alpine
+COPY . /code
+WORKDIR /code
+RUN pip3 install -r requirements.txt
+CMD python app.py</code></pre>
+    <p class="down">⬇️ Orchestration</p>
+</section>
+
+<!-- Slide 6: Orchestration Overview -->
+<section>
+    <h2>🔹 Container Orchestration</h2>
+    <ul>
+        <li>🔄 Automates deployment, scaling, and recovery</li>
+        <li>🧠 Maintains desired state of the system</li>
+        <li>🌍 Examples: Kubernetes, Docker Swarm, Mesos</li>
+    </ul>
+    <p class="down">⬇️ What is Orchestration (Fun)</p>
+</section>
+
+<!-- Slide 6.1: Container Orchestration (Fun Summary) -->
+<section>
+    <h2>🔹 Container Orchestration</h2>
+    <ul>
+        <li>🧪 Kubernetes</li>
+        <li>🔧 Docker Swarm</li>
+        <li>🎛️ Apache Mesos</li>
+    </ul>
+    <p>Solved all your problems, you’re welcome.</p>
+    <img src="images/cartoon.png" alt="Orchestration Humor" width="60%" />
+    <p class="down">⬇️ Kubernetes Concepts</p>
+</section>
+
+<!-- Slide 7: Kubernetes Concepts (Visual) -->
+<section>
+    <h2>🔹 Kubernetes Core Concepts</h2>
+    <img src="images/kubernetes.png" alt="Kubernetes Concepts Visual" width="80%" />
+    <p class="down">⬇️ Core Concepts Explained</p>
+</section>
+
+<!-- Slide 8: Kubernetes Concepts -->
+<section>
+    <h2>🔹 Kubernetes Core Concepts</h2>
+    <ul>
+        <li>📦 Pods: smallest deployable units</li>
+        <li>📈 Deployments: manage app versions and replicas</li>
+        <li>🔗 Services: expose apps and balance traffic</li>
+        <li>🛠️ Declarative: define desired state with YAML</li>
+    </ul>
+    <p class="down">⬇️ Serverless Visual</p>
+</section>
+
+<!-- Slide 9: Serverless (Visual) -->
+<section>
+    <h2>🔹 Serverless</h2>
+    <img src="images/faas.png" alt="Serverless Visual" width="80%" />
+    <p class="down">⬇️ Serverless Explained</p>
+</section>
+
+<!-- Slide 10: Serverless -->
+<section>
+    <h2>🔹 Serverless</h2>
+    <ul>
+        <li>⚙️ Run code without managing servers</li>
+        <li>💡 Great for short, event-driven tasks</li>
+        <li>💸 Pay only for usage—no idle cost</li>
+        <li>☁️ AWS Lambda, Azure Functions, GCP Cloud Functions</li>
+    </ul>
+    <p class="right">➡️ Next: Docker Hands-On</p>
+</section>

@@ -1,0 +1,102 @@
+<!-- Module 2: Microservices, CI/CD & DevOps -->
+
+<!-- Slide 1: Microservices Concepts -->
+<section>
+    <h2>🔹 Microservices</h2>
+    <ul>
+        <li>🧩 Polyglot, loosely-coupled services for speed and flexibility</li>
+        <li>🛠️ Developed and deployed independently</li>
+        <li>💡 Supports modular teams and agile processes</li>
+    </ul>
+    <p class="right">➡️ Containers & Orchestration</p>
+    <p class="down">⬇️ Twelve Factor App</p>
+</section>
+
+<!-- Slide 1.1: Twelve-Factor App (Visual) -->
+<section>
+    <h2>🔹 Twelve-Factor App</h2>
+    <img src="images/twelve-factor.png" alt="Twelve Factor App Visual" width="80%" />
+    <p class="down">⬇️ Principles</p>
+</section>
+
+<!-- Slide 2: Twelve Factor App -->
+<section>
+    <h2>🔹 Twelve-Factor App</h2>
+    <ul>
+        <li>📦 Separates config from code</li>
+        <li>🔁 Stateless, disposable processes</li>
+        <li>🚀 Dev/prod parity and version-controlled builds</li>
+    </ul>
+    <p class="down">⬇️ CI/CD</p>
+</section>
+
+<!-- Slide 2.1: CI/CD (Visual) -->
+<section>
+    <h2>🔹 CI/CD</h2>
+    <img src="images/ci-cd.png" alt="CI/CD Visual" width="80%" />
+    <p class="down">⬇️ CI/CD Explained</p>
+</section>
+
+<!-- Slide 3: Continuous Integration / Delivery -->
+<section>
+    <h2>🔹 CI/CD</h2>
+    <ul>
+        <li>🔄 CI ensures code is tested and merged continuously</li>
+        <li>🚢 CD keeps your code always ready to deploy</li>
+        <li>⚙️ Automated pipelines improve speed and reliability</li>
+    </ul>
+    <p class="down">⬇️ Code Examples</p>
+</section>
+
+<!-- Slide 3.1: Java Microservice (Visual) -->
+<section>
+    <h2>🔹 Java Microservice</h2>
+    <img src="images/java.png" alt="Java Microservice Diagram" width="80%" />
+    <p class="down">⬇️ Code</p>
+</section>
+
+<!-- Slide 4: Java Microservice -->
+<section>
+    <h2>🔹 Java Microservice</h2>
+    <pre><code>@Path("/helloworld")
+public class HelloWorld {
+  @GET @Produces("text/plain")
+  public String hello() { return "Hello World"; }
+}</code></pre>
+    <p class="down">⬇️ Spring Boot</p>
+</section>
+
+<!-- Slide 4.1: Spring Boot Microservice (Visual) -->
+<section>
+    <h2>🔹 Spring Boot Microservice</h2>
+    <img src="images/spring.png" alt="Spring Boot Visual" width="80%" />
+    <p class="down">⬇️ Code</p>
+</section>
+
+<!-- Slide 5: Spring Boot Microservice -->
+<section>
+    <h2>🔹 Spring Boot Microservice</h2>
+    <pre><code>@RestController
+public class Hello {
+  @RequestMapping("/helloworld")
+  public String hello() { return "Hello World"; }
+}</code></pre>
+    <p class="down">⬇️ Python</p>
+</section>
+
+<!-- Slide 5.1: Python Microservice (Visual) -->
+<section>
+    <h2>🔹 Python Microservice</h2>
+    <img src="images/python.png" alt="Python Microservice Visual" width="80%" />
+    <p class="down">⬇️ Code</p>
+</section>
+
+<!-- Slide 6: Python Microservice -->
+<section>
+    <h2>🔹 Python Microservice</h2>
+    <pre><code>from flask import Flask
+app = Flask(__name__)
+@app.route('/helloworld')
+def hello(): return 'Hello World!'</code></pre>
+    <p class="down">➡️ Next Module: Containers & Orchestration</p>
+</section>
